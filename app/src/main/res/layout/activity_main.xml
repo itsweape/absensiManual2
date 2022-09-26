@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="38dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Absen Manual"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/tanggal"
+       android:layout_below="@id/text"
+       android:layout_marginTop="45dp"
+       android:padding="10dp"
+       android:hint="Masukkan tanggal"
+       android:background="@drawable/border"
+       android:textSize="20sp"
+       android:editable="false"/>
+
+    <EditText
+        android:id="@+id/waktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tanggal"
+        android:layout_marginTop="11dp"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:editable="false"
+        android:hint="Masukkan waktu"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_spinner"
+        android:layout_below="@id/waktu"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keterangan"
+        android:layout_below="@id/label_spinner"
+        android:layout_marginTop="22dp"
+        android:height="125sp"
+        android:background="@drawable/border"
+        android:hint="Keterangan"
+        android:paddingLeft="10dp"
+        android:paddingBottom="80dp"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_below="@id/keterangan"
+        android:text="Submit"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>
